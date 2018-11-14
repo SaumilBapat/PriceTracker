@@ -20,7 +20,8 @@ window.fbAsyncInit = function() {
  }(document, 'script', 'facebook-jssdk'));
 
 
- $('#facebook-button').on('click', function() {
+ $('#facebook-button').on('click', function(event) {
+   event.preventDefault()
    alert('hi');
    // Initialize with your OAuth.io app public key
    OAuth.initialize('LllCNrbeI4SlJk6vdQLO5txR8os');
