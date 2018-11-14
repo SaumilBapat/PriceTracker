@@ -21,12 +21,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-
     <!--Material Design Reference-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.14/css/mdb.min.css" rel="stylesheet">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.14/js/mdb.min.js"></script>    
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
     <!--CSS Reference-->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
@@ -48,42 +47,29 @@
                   <p class="lead">An ultimate price tracking app...</p>
                 </div>
         </div>
-
-<<<<<<< HEAD
-        <!--Navbar-->
         <nav class="mb-4 navbar navbar-expand-lg navbar-dark unique-color-dark">
-            <a class="navbar-brand" href="#"><i class="fas fa-search-dollar"></i>Smart Shoppers</a>
+            <span class="navbar-brand" href="#"><i class="fas fa-search-dollar"></i>Smart Shoppers</span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-                <ul class="navbar-nav ml-auto">
-=======
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
->>>>>>> fcfc76f6ed4e92ac4dbbd8a2a35fbcbfa95c2536
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./search-page.html"><i class="fas fa-search"></i> Item Search <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./saved-page.html"><i class="fa fa-heart"></i> My Items </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-address-card"></i> Account </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
-                            <a class="dropdown-item" href="./profile-page.html"><i class="fas fa-user-circle"></i> My Profile </a>
-                            <a class="dropdown-item" href="./index.html"><i class="fas fa-sign-in-alt"></i> Log In </a>
-                        </div>
-                    </li>
-                </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./search-page.html"><i class="fas fa-search"></i> Item Search <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./saved-page.html"><i class="fa fa-heart"></i>My Items</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-address-card"></i>Account</a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
+                        <a class="dropdown-item" href="./profile-page.html"><i class="fas fa-user-circle"></i> My Profile </a>
+                        <a class="dropdown-item" href="./index.html"><i class="fas fa-sign-in-alt"></i>Log In</a>
+                    </div>
+                </li> -->
+            </ul>
             </div>
         </nav>
-    <script type="text/javascript" src="./assets/javascript/api.js"></script>
-    <script type="text/javascript" src="./assets/javascript/search.js"></script>
 
    <!-- Modal -->
    <div class="modal fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
@@ -91,7 +77,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="modalLabel"></h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <button type="btn button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
@@ -99,28 +85,16 @@
                     <div class="container-fluid">
                             <div class="row align-items-center">
                               <div class="col-lg-4">
-                                    <!-- hard code this for testing-->
-                                    <img src="https://i5.walmartimages.com/asr/a7bda75c-8a9b-4b8b-a596-33bdc026f1cc_1.ed584e2f7443484f63bccbacf8bd6587.png?odnHeight=450&odnWidth=450&odnBg=FFFFFF" alt="some text" width="254" height="254" />
-                                
+                              <!-- hard code this for testing-->
+                              <img id='productImage' src="" alt="some text" width="254" height="254" />
+
                               </div>
                               <div class="col-lg-8">
-                                  <h3>Product Name</h3>
-                                  <p>some text</p>
-                               
-                                  <h3>Description</h3>
-                                  <p>some text</p>
-                               
-                                  <h3>MSRP Price</h3>
-                                  <p>some text</p>
-                                  
-                                  <h3>Sale Price</h3>
-                                  <p>some text</p>
-                            
-                                  <h3>Availability</h3>
-                                  <p>some text</p>
-
-                                  <h3>Some more detail</h3>
-                                  <p>some text</p>
+                                  <h3><b>Product Id: </b><span id='productIdValue'/></h3><br/>
+                                  <h3><b>Description: </b><br/><div id='productDescriptionValue'/></h3><br/>
+                                  <h3><b>MSRP Price: </b><span id='productMSRPValue'/></h3><br/>
+                                  <h3><b>Sale Price: </b><span id='productPriceValue'/></h3><br/>
+                                  <h3><b>Availability: </b><span id='productAvailabilityValue'/></h3><br/>
                                </div>
                             </div>
                     </div>
@@ -129,7 +103,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary modalTrack" data-item="item-ID1234">Track Item</button>
+              <button type="button" class="btn btn-primary modalTrack" data-item="item-ID1234" data-dismiss="modal" id='modalSave'>Save Item</button>
             </div>
           </div>
         </div>
@@ -137,9 +111,17 @@
 
     <!--Overall Grid-->
     <div class="container gridContainer" >
-        <div class="row"/>
+      <div class="row">
+          <input class="form-control" style="margin:0px 10px;" type="search" placeholder="Search" aria-label="Search" id="search_box">
+      </div>
+      <div class="row">
+          <button type="button" class="btn btn-primary btn-lg btn-block"  style="margin:0px 10px;" type="submit" id="search_submit">Search</button>
     </div>
 
+        <div class="row" id='items'/>
+    </div>
+    <script type="text/javascript" src="./assets/javascript/api.js"></script>
+    <script type="text/javascript" src="./assets/javascript/search.js"></script>
 </body>
 
 </html>
