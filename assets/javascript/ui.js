@@ -1,3 +1,4 @@
+alert('updated');
 window.fbAsyncInit = function() {
   FB.init({
     appId      : '264830230758095',
